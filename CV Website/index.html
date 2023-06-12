@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7233ffab60.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Chip.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Skills</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Junior Engineer</p>
+            <h1> Hello, I'm<span> Luke Taylor</span><br> From Oxford, United Kingdom</h1>
+        </div>
+    </div>
+</div>
+<!------------------about------------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <!-- <img src="images/user.png">  add a pic of me-->
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Juinor Engineer that has been fotunate to work within the largest building society in the world as well as the UK's largest Bank, to help them test and develop their credit decisioning systems and provide advice and information on numerous banking services.
+                    <br></br> 
+                    I am passionate about continuing to develop myself and learn as much as possible within the expanding space of tech. I would like to learn more about data and analytics in the future to understand how the data we monitor can provide the best outcomes for consumers.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                    <p class="tab-links " onclick="opentab('experience')" >Experience</p>
+                    <br>
+                    <p class="tab-links " onclick="opentab('education')" >Education </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Automation Testing</span><br>Backend Development</li>
+                        <br>
+                        <li><span>Data Analysis</span><br>Data Communication</li>
+                        <br>
+                        <li><span>Problem Solving</span><br>Resolving at point of issue</li>
+                        <br>
+                        <li><span>Focused On Excellence</span><br>Getting the right outcome first time</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Technology Development Programme-Nationwide Building Society</li>
+                        <br>
+                        <li><span>2017 - 2022</span><br>Mortgage Advisor-Nationwide Building Society</li>
+                        <br>
+                        <li><span>2014 - 2017</span><br>Banking Adviser-HSBC</li>
+                        <br>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>ISTQB</li>
+                        <br>
+                        <li><span>2019</span><br>CeRER</li>
+                        <br>
+                        <li><span>2016</span><br>Cert CII MP</li>
+                        <br>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------------Skills-------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>I have been able to create several site projects. <br></br>Examples of this include sites for business and apps for well beign and fitness</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-hand"></i>
+                <h2>People Management </h2>
+                <p>I have had experience of managing teams of various sizes. <br></br>The largest being of 15 people within a fast passed environment with deadlines to meet.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-vials"></i>
+                <h2>Automation Testing </h2>
+                <p>I have worked on projects where I am responsible for the automation testing end to end for API's. <br></br> Manual testing also took place as well as storage of test cases in Zephr scale. </p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>   
+    </div>
+</div>
+<!------------My Work--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Wellbeing App</h3>
+                    <p>This App was created to act as a creative journal for individuals struggling with their mental health. With the world being at peoples fingertips now an App is a logical solution to write your journal to support individuals during their struggles and on their journey to recovery.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Migration Execution</h3>
+                    <p>Migration Execution has been at the forefront of my experience within Credit Risk. The need to have systems move away from outdated services meant that all services could continue in a safe and secure manner for consumers. </p>
+                    <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Web</h3>
+                    <p>I have ahd the opportunity to create sites for my work as well as a business. This was to support my development as well as support the business to reach more customers and bring them in to the 21st Century.</p>
+                    <a href="#"><i class="fa-solid fa-cart-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class=""sub-title>Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>TMServices@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>07527 064054</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="https://nbsuk-my.sharepoint.com/:w:/r/personal/luke_taylor_nationwide_co_uk/Documents/Documents/Luke%20Taylor%20C.V%203%20(002).docx?d=w6b94bb746e594ae69a93f83b7026fe0d&csf=1&web=1&e=3NLCme" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Luke Taylor</p>
+    </div>
+</div>    
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }    
+</script>
+
+<script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxE4uJVqOPcKnGNJLVnjMmF6auEBax_GOw4J8-ObNouJtVCPHWyy0LffIubRddvMXV15w/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
